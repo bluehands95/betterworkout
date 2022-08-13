@@ -2,5 +2,5 @@
 
 - [ ] Dark theme
 - [ ] Better images
-- [ x ] Finish counter
+- [x] Finish counter
 - [ ] Better animations
