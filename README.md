@@ -4,3 +4,4 @@
 - [ ] Better images
 - [x] Finish counter
 - [ ] Better animations
+- [ ] Fix colors

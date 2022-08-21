@@ -4,12 +4,10 @@ module.exports = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			title: 'Roboto Slab',
-			sans: 'Source Sans Pro'
+			title: 'Playfair Display'
 		},
 		colors: {
-			raisin: '#272838',
-			cultured: '#F9F8F8'
+			crimson: '#f05f40'
 		}
 	},
 	plugins: []
