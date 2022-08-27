@@ -3,7 +3,7 @@
 	const excercises = [
 		{
 			name: 'push ups',
-			reps: 20
+			reps: 15
 		},
 		{
 			name: 'abs',
