@@ -66,12 +66,33 @@
 		>
 	</div>
 {:else}
-	<div class="flex justify-center flex-col m-auto h-screen cool">
-		<button on:click={setFinish}>
-			<h1 class="text-crimson text-7xl cursor-pointer font-title">
+	<div class="flex justify-center flex-col h-screen cool">
+		<div class="flex justify-center flex-col m-auto">
+			<button
+				on:click={setFinish}
+				class="text-crimson text-7xl cursor-pointer font-title text-center"
+			>
 				{excercises[currentExcercise].reps}
 				{excercises[currentExcercise].name.toUpperCase()}
-			</h1></button
-		>
+			</button>
+		</div>
+		<div
+			class="h-2 bg-crimson"
+			class:first={counterSet == 0}
+			class:second={counterSet == 1}
+			class:third={counterSet == 2}
+		/>
 	</div>
 {/if}
+
+<style>
+	.first {
+		width: 0%;
+	}
+	.second {
+		width: 33%;
+	}
+	.third {
+		width: 66%;
+	}
+</style>
