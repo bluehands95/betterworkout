@@ -4,7 +4,7 @@ module.exports = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			title: 'Playfair Display'
+			title: ['Playfair Display', 'consolas']
 		},
 		colors: {
 			crimson: '#f05f40'
