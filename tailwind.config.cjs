@@ -7,8 +7,8 @@ module.exports = {
 			title: ['Playfair Display', 'consolas']
 		},
 		colors: {
-			tomato: '#FE654F',
-			alice: '#F9FDFF'
+			tomato: '#EDEADE',
+			alice: '#003153'
 		}
 	},
 	plugins: []

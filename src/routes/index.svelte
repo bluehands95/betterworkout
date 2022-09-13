@@ -43,6 +43,7 @@
 		}
 	}
 
+	// counter
 	setInterval(() => {
 		if (!started && currentExcercise > 0) {
 			return;
@@ -52,32 +53,32 @@
 </script>
 
 {#if !started && currentExcercise > 0}
-	<div class="flex justify-center flex-col m-auto h-screen text-center bg-tomato">
-		<h1 class="text-alice text-6xl font-title py-1">GOOD JOB</h1>
-		<p class="text-alice text-6xl font-title">
+	<div class="flex justify-center flex-col m-auto h-screen text-center bg-alice">
+		<h1 class="text-tomato text-6xl font-title py-1">GOOD JOB</h1>
+		<p class="text-tomato text-6xl font-title">
 			TIME: {Math.round(counter / 60)} MINUTES AND {counter % 60} SECONDS
 		</p>
 	</div>
 {:else if !started}
-	<div class="flex justify-center flex-col m-auto h-screen bg-tomato">
+	<div class="flex justify-center flex-col m-auto h-screen bg-alice">
 		<button
-			class="text-alice text-7xl cursor-pointer font-title"
+			class="text-tomato text-7xl cursor-pointer font-title"
 			on:click={() => (started = !started)}>WORKOUT</button
 		>
 	</div>
 {:else}
-	<div class="flex justify-center flex-col h-screen bg-tomato">
+	<div class="flex justify-center flex-col h-screen bg-alice">
 		<div class="flex justify-center flex-col m-auto">
 			<button
 				on:click={setFinish}
-				class="text-alice text-7xl cursor-pointer font-title text-center"
+				class="text-tomato text-7xl cursor-pointer font-title text-center"
 			>
 				{excercises[currentExcercise].reps}
 				{excercises[currentExcercise].name.toUpperCase()}
 			</button>
 		</div>
 		<div
-			class="h-2 bg-alice"
+			class="h-2 bg-tomato"
 			class:first={counterSet == 0}
 			class:second={counterSet == 1}
 			class:third={counterSet == 2}
